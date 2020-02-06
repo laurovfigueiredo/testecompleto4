@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+    </head>
+    <body>
+        <table border="1" width="200px">
+            <tr>
+                <td>Nome</td>
+                <td>Idade</td>
+            </tr>
+        <script>
+            const json = {
+                "clientes" :
+            [
+                {
+                        "nome" : "João",
+                        "idade" : 30
+                    },
+                    {
+                        "nome" : "José",
+                        "idade" : 35
+
+
+                }
+            
+            ]    
+        }
+            
+        json.clientes.forEach(elemento =>{
+                console.log(elemento.nome);
+                document.write('<tr>');
+                document.write('<td>' + elemento.nome + '</td>');
+                document.write('<td>'+ elemento.idade + '</td>');
+                document.write('</tr>');
+            });
+        
+        
+        
+        
+        </script>
+        </table>
+    </body>
+</html>
